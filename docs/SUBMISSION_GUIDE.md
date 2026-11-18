@@ -5,7 +5,7 @@
 | College requirement | Deliverable | Status |
 | --- | --- | --- |
 | PPT Google Drive link | Student_Expense_Tracker_Presentation.pptx | File prepared. Upload and share as below. |
-| GitHub link | Public student-expense-tracker-java repository | Publication requires an accessible repository. Do not submit an unverified URL. |
+| GitHub link | https://github.com/SathwikGadchanda/student-expense-tracker-java | Published successfully and verified as public. |
 | Live/deployed link, if any | Desktop Java application | Not applicable. Share a demonstration recording instead. |
 | Project report | Student_Expense_Tracker_Report.pdf | File prepared. Fill academic placeholders before final submission. |
 
@@ -26,23 +26,22 @@ Google Drive was not connected during preparation. No Drive upload or public sha
 
 Keep the original PPTX when uploading. Opening it in Google Slides is optional. If converting to Google Slides, review diagrams and screenshot proportions before sharing the converted file.
 
-## GitHub publication
+## GitHub source code
 
-The connected GitHub account is SathwikGadchanda. The available connector supports file and commit modifications, but does not expose repository creation. The checked browser session required sign-in.
+Public repository: https://github.com/SathwikGadchanda/student-expense-tracker-java
 
-Create a public repository named `student-expense-tracker-java` at `https://github.com/new`, with a README initialized. After this, the connected GitHub tool can upload the prepared source. Alternatively, use Git locally in the extracted source directory:
+The source, Maven configuration, database initialization, tests, README and real application screenshots were uploaded successfully. The main branch and its complete file tree were checked after publication. Submit this repository URL in the college's GitHub Link field.
+
+To obtain the source, use **Code > Download ZIP** on the repository page, or run:
 
 ```powershell
-git init -b main
-git add .
-git commit -m "Build Student Expense Tracker with SQLite and tests"
-git remote add origin https://github.com/YOUR_USERNAME/student-expense-tracker-java.git
-git push -u origin main
+git clone https://github.com/SathwikGadchanda/student-expense-tracker-java.git
+cd student-expense-tracker-java
+mvn clean verify
+java -jar target/student-expense-tracker.jar
 ```
 
-For this local Git route, create an empty remote repository without README, so there is no competing initial history. Replace YOUR_USERNAME with your actual GitHub username. If you already created a README on the remote, clone that repository first, copy the prepared source into it, commit and push. Use Git Credential Manager's normal browser sign-in. Never paste a token into source files, README or screenshots. Check the public repository page in an incognito window after pushing.
-
-The source ZIP excludes personal databases, CSV exports, downloaded JDK/Maven tooling and private account data. Screenshots use synthetic demonstration records.
+Future changes can use Git Credential Manager's normal browser sign-in and meaningful commits. Never put a token into source files, README or screenshots. The repository excludes personal databases, CSV exports and downloaded build tooling. Screenshots use synthetic demonstration records.
 
 ## Demo video
 
@@ -57,7 +56,7 @@ Do not present a GitHub repository URL as a live deployed application. Swing req
 - [ ] Confirm the report and the 12-slide PPT open correctly.
 - [ ] Upload the PPT to Drive, set Viewer sharing and test the copied link.
 - [ ] Upload the report and test its link if a link is required.
-- [ ] Verify the GitHub repository is public and contains source, pom.xml, docs and screenshots.
+- [x] Verified the public GitHub repository contains source, pom.xml, docs and screenshots.
 - [ ] Record a short demo and share the video if needed.
 - [ ] Practise the 20 viva questions and explain the actual classes.
 - [ ] Submit only links that you have opened successfully.
